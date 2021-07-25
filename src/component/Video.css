@@ -1,0 +1,8 @@
+.video__box{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 50px;
+}
+.video{
+    padding: 10px;
+}

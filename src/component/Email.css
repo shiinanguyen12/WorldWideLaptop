@@ -1,0 +1,41 @@
+.email{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .container{
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border: 1px solid lightgray;
+  }
+  .email-signIn, .login-registered{
+      background-color: white;
+      border: 1px solid;
+      margin-top: 10px;
+      height: 30px;
+      border-radius: 2px;
+      color: #111;
+      border-color: blanchedalmond;
+  }
+  .email-container p{
+      margin-top: 15px;
+      font-size: 12px;
+  }
+  .email-container h1{
+      font-weight: 50px;
+      margin-bottom: 20px;
+  }
+  .login-container > from > h5{
+      margin-bottom: 5px;
+  } 
+  .email-container > from> input{
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+ 

@@ -21,7 +21,7 @@ function Login (){
             <p>Are you sure?</p>
             <Form.Group className="mb-5" controlId="formBasicCheckbox">
             </Form.Group>
-            <Button variant="primary" type="submit">Dang Nhap</Button>
+            <Button variant="primary" type="submit">Sign In</Button>
           </Form>
           </div>
             </div>

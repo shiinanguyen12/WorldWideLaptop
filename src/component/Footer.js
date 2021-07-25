@@ -1,65 +1,72 @@
-import React from 'react'
-import "../bootstrap/dist/css/bootstrap.min.css";
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import YouTubeIcon from '@material-ui/icons/YouTube';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import React from "react";
+import {
+Box,
+Container,
+Row,
+Column,
+FooterLink,
+Heading,
+} from "./FooterStyles";
 
-class Footer extends React.Component {
-
-    render() {
-
-        return(
-
-          <div className="footer">
-          <div className="footer-container">
-            <table className="footer-table">
-            <thead>
-              <tr>
-                <th>Thông Tin Chung</th>
-                <th>Chính Sách Chung</th>
-                <th>Hỗ Trợ Khách Hàng</th>
-                <th>Liên Kết Mạng Xã Hội</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Giới Thiệu</td>
-                <td>Chính sách Vận Chuyển</td>
-                <td>Hướng Dẫn Mua Hàng Trực Tuyến</td>
-               <td><FacebookIcon/>Facebook</td>
-              </tr>
-              <tr>
-                <td>Tin Tức - Cập Nhật</td>
-                <td>Chính Sách Bảo Hành</td>
-                <td>Hướng Dẫn Mua Trả Góp</td>
-                <td><InstagramIcon/>Instagram</td>
-              </tr>
-              <tr>
-                <td>Thông Tin Khuyến Mãi</td>
-                <td>Chính Sách Đổi Trả</td>
-                <td>Hướng Dẫn Thanh Toán</td>
-                <td><YouTubeIcon/>Youtube</td>
-              </tr>
-              <tr>
-                <td>Thông Tin Liên Hệ</td>
-                <td>Chính Sách Bảo Mật</td>
-                <td herf="#">Từ vấn Kỹ Thuật</td>
-                <td ><TwitterIcon/>Twitter</td>
-              </tr>
-            </tbody>
-            </table>
-            <div className="footer-container2">
-              <h2>CÔNG TY TNHH </h2>
-              <p>Địa Chỉ:</p>
-              <p>Số Điện Thoại</p>
-              <p>Email:</p>
-              <p>Hotline:</p>
-            </div>
-            </div>
-        </div>
-        )
-    }
-}
-
-export default Footer
+const Footer = () => {
+return (
+	<Box>
+	<Container>
+		<Row>
+		<Column>
+			<Heading>About Us</Heading>
+			<FooterLink href="#">Aim</FooterLink>
+			<FooterLink href="#">Vision</FooterLink>
+			<FooterLink href="#">Testimonials</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Services</Heading>
+			<FooterLink href="#">Writing</FooterLink>
+			<FooterLink href="#">Internships</FooterLink>
+			<FooterLink href="#">Coding</FooterLink>
+			<FooterLink href="#">Teaching</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Contact Us</Heading>
+			<FooterLink href="#">Uttar Pradesh</FooterLink>
+			<FooterLink href="#">Ahemdabad</FooterLink>
+			<FooterLink href="#">Indore</FooterLink>
+			<FooterLink href="#">Mumbai</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Social Media</Heading>
+			<FooterLink href="#">
+			<i className="fab fa-facebook-f">
+				<span style={{ marginLeft: "10px" }}>
+				Facebook
+				</span>
+			</i>
+			</FooterLink>
+			<FooterLink href="#">
+			<i className="fab fa-instagram">
+				<span style={{ marginLeft: "10px" }}>
+				Instagram
+				</span>
+			</i>
+			</FooterLink>
+			<FooterLink href="#">
+			<i className="fab fa-twitter">
+				<span style={{ marginLeft: "10px" }}>
+				Twitter
+				</span>
+			</i>
+			</FooterLink>
+			<FooterLink href="#">
+			<i className="fab fa-youtube">
+				<span style={{ marginLeft: "10px" }}>
+				Youtube
+				</span>
+			</i>
+			</FooterLink>
+		</Column>
+		</Row>
+	</Container>
+	</Box>
+);
+};
+export default Footer;

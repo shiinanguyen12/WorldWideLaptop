@@ -5,7 +5,7 @@ import {Form, Button} from 'react-bootstrap'
 function Registered (){
     return(
         <div className="register">
-            <h2>Dang Ky</h2>
+            <h2>Register</h2>
          <div className="register-container">
         <Form>
         <Form.Group className="sm-6" controlId="formBasicEmail">
@@ -26,7 +26,7 @@ function Registered (){
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
         </Form.Group>
-        <Button variant="primary" type="submit">Dang ky</Button>
+        <Button variant="primary" type="submit">Register</Button>
       </Form>
       </div>
         </div>

@@ -6,3 +6,6 @@
     border: 2px solid white;
     margin: 0 10px;
 }
+#btn__group{
+    border: none;
+}

@@ -1,0 +1,6 @@
+.news{padding-top: 100px;}
+.news .row .col-md-4{height: 300px; padding:3px; border-style: groove; box-shadow: inset;}
+.news .news_detail{margin: 5px; background-color: aqua;}
+
+.news .news_detail h1{color:red}
+.news .news_detail p{border-style: solid; border-width: 1px;}

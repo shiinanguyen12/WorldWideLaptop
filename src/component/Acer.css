@@ -1,6 +1,14 @@
-.dell-container{
+.dell-container {
     display: flex;
 }
-.dell-row{
+
+.dell-row {
     display: flex;
+    flex-basis: 100%;
+}
+
+.acer__product {
+    display   : flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
 }

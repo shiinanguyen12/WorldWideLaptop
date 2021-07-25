@@ -1,10 +1,9 @@
-import React from 'react'
-import {DataContext} from '../component/Context';
+import React, { Component } from 'react'
+import {DataContext} from '../component/Context'
 import {Link} from 'react-router-dom'
-import './Details.css';
-import './Cart.css';
+import './Cart.css'
 
-class Cart extends React.Component {
+export class Cart extends Component {
     static contextType = DataContext;
 
     componentDidMount(){
@@ -27,8 +26,11 @@ class Cart extends React.Component {
                                         <h2>{item.title}</h2>
                                         <span>${item.price * item.count}</span>
                                     </div>
-                                    <p>{item.description}</p>
-                                    <p>{item.content}</p>
+                                        <p>{item.rating}</p>
+                                        <p>{item.ram}</p>
+                                        <p>{item.cpu}</p>
+                                        <p>{item.vga}</p>
+                                        <p>{item.o}</p>
                                     <div className="amount">
                                         <button className="count" onClick={() => reduction(item._id)}> - </button>
                                         <span>{item.count}</span>
@@ -49,4 +51,4 @@ class Cart extends React.Component {
         }
 }
 
-export default Cart;
+export default Cart
